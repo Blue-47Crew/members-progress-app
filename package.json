@@ -1,25 +1,18 @@
 {
-  "name": "member-progress-app",
-  "version": "1.0.0",
-  "description": "The app will monitor members' progress at Blue|1647",
-  "main": "app.js",
+  "name": "members-progress-app",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./bin/www"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Sonju/members-progress-app.git"
-  },
-  "author": "Blue-47Crew",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Sonju/members-progress-app/issues"
-  },
-  "homepage": "https://github.com/Sonju/members-progress-app#readme",
-  "devDependencies": {
-    "express": "^4.13.4",
-    "grunt": "^1.0.1",
-    "sass": "^0.5.0",
-    "uglify": "^0.1.5"
+  "dependencies": {
+    "body-parser": "~1.13.2",
+    "cookie-parser": "~1.3.5",
+    "debug": "~2.2.0",
+    "ejs": "~2.3.3",
+    "express": "~4.13.1",
+    "morgan": "~1.6.1",
+    "node-sass-middleware": "0.8.0",
+    "serve-favicon": "~2.3.0"
   }
 }
