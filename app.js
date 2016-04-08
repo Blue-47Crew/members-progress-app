@@ -28,6 +28,7 @@ app.use(require('node-sass-middleware')({
 }));
 app.use(express.static(path.join(__dirname, 'public')));
 
+// Routes aka url links similar to Rails 'Controllers'
 app.use('/', routes);
 app.use('/users', users);
 
