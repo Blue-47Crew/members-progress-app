@@ -8,7 +8,15 @@ var bodyParser = require('body-parser');
 var routes = require('./routes/index');
 var users = require('./routes/users');
 
+// require database (mongoose is the ORM and mongodb is the database)
+require('./models/db');
+
 var app = express();
+
+// routes are similar to rails 'controllers' 
+// routes are the web pages' address/url
+app.use('/', routes);
+app.use('/users', users);
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -27,10 +35,6 @@ app.use(require('node-sass-middleware')({
   sourceMap: true
 }));
 app.use(express.static(path.join(__dirname, 'public')));
-
-// Routes aka url links similar to Rails 'Controllers'
-app.use('/', routes);
-app.use('/users', users);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
