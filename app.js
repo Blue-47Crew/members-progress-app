@@ -13,7 +13,6 @@ require('./models/db');
 
 var app = express();
 
-// routes are similar to rails 'controllers' 
 // routes are the web pages' address/url
 app.use('/', routes);
 app.use('/users', users);

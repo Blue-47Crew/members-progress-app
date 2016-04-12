@@ -1,0 +1,10 @@
+business_name,address,city,state,zip_code,phone,email,industry_sector,contact_firstName,contact_lastName,incorporation, num_of_employees,blue_start_date,blue_end_date,invest_seeking,investor_name,invest_amount,comments
+FirstGrade Start,1289 Clark Street,Chicago,IL,60064,(773) 518-4562,richstart@gmail.com,Education,Paul,Smith,TRUE,2,1/13/2016,,Seed,Blake Shaheed,"$4,000",
+Kicker App,345 S. Madison,Oak Park,IL,60301,(773) 445-4562,kickerapp@gmail.com,Theater & Arts,Kenya,Ebo,FALSE,1,2/1/2016,,Pre-Seed,none,$0,Intial conversation went well
+My First,54 N. Hamlin Avenue,Chicago,IL,60401,(773) 445-0023,myfirst@gmail.com,Education,Thelia ,Martinez,FALSE,4,4/11/2016,,Seed,Wiseman Fund,"$10,000",
+End The Madness,601 Blake Street,Windsor,IL,60301,(773) 518-4562,endthemadness@gmail.com,Human & Social Services,Pat ,Jenkins,TRUE,3,3/24/2016,,Series A,BlackTech Fund,"$80,000",
+Sports Fit,"1 Circle Street, Unit A",Chicago,IL,60621,(773) 518-4619,sportsfit@gmail.com,Sports,Jacob ,Anders,TRUE,2,2/8/2016,,Pre-Seed,BlackTech Fund,"$35,000",
+Chicago Candies,13 E. Banks Street,Skokie,IL,60034,(312) 467-0024,chicagocandies@gmail.com,Food,Katty ,Watkins,TRUE,1,12/18/2015,,Pre-Seed,none,$0,Family business
+Treat Yo Self,50 S. Jackson,Evanston,IL,60041,(847) 221-1124,treatyoself@gmail.com,Tech,Jackson,Clark,TRUE,3,1/29/2016,,Seed,Wiseman Fund,"$50,000",
+Mad Wild,1011 Harlem Avenue ,Berwyn,IL,60402,(312) 745-0101,madwild@gmail.com,Science,Sonia ,Carter,FALSE,1,11/26/2015,,Series A,BlackTech Fund,"$90,000",social entreprenuer 
+Games R Us,5601 S. Blue Island,Chicago,IL,60041,(773) 997-0022,gamesRus@gmail.com,Tech,Tim,Kim,TRUE,4,2/14/2016,,Series B,Blake Shaheed,"$60,000",
