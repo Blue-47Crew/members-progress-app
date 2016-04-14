@@ -6,16 +6,13 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 var routes = require('./routes/index');
-var users = require('./routes/users');
-
-// require database (mongoose is the ORM and mongodb is the database)
-require('./models/db');
+var members = require('./routes/members');
 
 var app = express();
 
 // routes are the web pages' address/url
 app.use('/', routes);
-app.use('/users', users);
+app.use('/members', members);
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
