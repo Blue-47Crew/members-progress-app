@@ -5,15 +5,15 @@ var router = express.Router();
 // require database (mongoose is the ORM and mongodb is the database)
 require('../models/db.js');
 
-var memberSchema = require('../models/Member');
+var investorSchema = require('../models/Member');
 
-var Members = mongoose.model('Members', memberSchema);
+var Investors = mongoose.model('Members', investorSchema);
 
 /* GET members listing. */
 router.get('/', function(req, res, next) {
-  Members.find(function (err, members) {
-    console.log(members);
-    res.json(members);
+  Investors.find(function (err, investors) {
+    console.log(investors);
+    res.json(investors);
   })
 });
 

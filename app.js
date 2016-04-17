@@ -8,12 +8,16 @@ var log = require('simple-node-logger').createSimpleLogger('project.log');
 
 var routes = require('./routes/index');
 var members = require('./routes/members');
+var contacts = require('./routes/contacts');
+var investors = require('./routes/investors');
 
 var app = express();
 
 // routes are the web pages' address/url
 app.use('/', routes);
 app.use('/members', members);
+app.use('/contacts', contacts);
+app.use('/investors', investors);
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

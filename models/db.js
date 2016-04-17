@@ -1,7 +1,7 @@
   var mongoose = require('mongoose');
 
 // 1 - a connection string
-  var connectionString = 'mongodb://localhost/members';
+  var connectionString = 'mongodb://localhost/blue1647';
 
 // 2 -  make connection to database
   mongoose.connect(connectionString);
