@@ -1,6 +1,7 @@
 var mongoose = require('mongoose');
+var Schema = mongoose.Schema;
 
-var membersSchema = mongoose.Schema ({
+var memberSchema = new Schema ({
   business_name: String
   // address: String,
   // city: String,
@@ -23,4 +24,4 @@ var membersSchema = mongoose.Schema ({
 
 
 
-module.exports = membersSchema;
+module.exports = memberSchema;
