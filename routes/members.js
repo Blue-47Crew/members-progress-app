@@ -1,7 +1,7 @@
 var express = require('express');
 var mongoose = require('mongoose');
-var router = express.Router();
 var bodyParser = require('body-parser');
+var router = express.Router();
 
 // require database (mongoose is the ORM and mongodb is the database)
 require('../models/db.js');
@@ -17,24 +17,29 @@ router.get('/', function(req, res, next) {
     if (error) return error;
     res.json(members);
   });
-
 });
 
 /* CREATE members  */
 router.post('/', function(req, res, next) {
 
  var member = new Members(req.body);
- member.save(function(error) {
-   if (error) {
-     return res.send(error);
-   }
-   res.send({ message: "Member added."});
+ member.save(function(error, member) {
+   if (error) return error;
+   res.send(member);
  });
-
 });
 
 
 /* UPDATE members  */
+router.put('/:id', function(req, res, next) {
+
+  Members.findByIdAndUpdate(id, update, req.body, function(error, member) {
+    if (error) return error;
+    res.json(member);
+  });
+});
+
+
 
 
 
